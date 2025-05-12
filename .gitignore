@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# Logs and local files
+*.log
+*.sqlite3
+*.db
+
+# VS Code and IDEs
+.vscode/
+.idea/
+
+# macOS and Unix
+.DS_Store
+*.swp
+
+# Environment variable files
+.env
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+pytest_cache/
+
+# Docker
+*.pid
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# pycache and compiled files inside any directory
+**/__pycache__/
+**/*.pyc

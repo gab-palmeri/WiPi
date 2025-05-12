@@ -1,0 +1,9 @@
+body {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    text-transform: lowercase;
+}
+
+/* Applicare lowercase specificamente su bottoni e dropdown */
+option, button, .btn, .dropdown-menu, .dropdown-item {
+    text-transform: lowercase;
+}
