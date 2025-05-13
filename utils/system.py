@@ -11,13 +11,18 @@ def get_local_ip():
     return "N/A"
 
 def get_system_info():
-    return {
+
+    response = {
         "local_ip": get_local_ip(),
         "cpu": psutil.cpu_percent(),
-        "ram_used": psutil.virtual_memory().percent,
-        "ram_total": round(psutil.virtual_memory().total / (1024 ** 3)),
+        "ram_used": round(psutil.virtual_memory().used / (1024 ** 3), 2),
+        "ram_total": round(psutil.virtual_memory().total / (1024 ** 3), 2),
         "temperature": get_temperature()
     }
+
+    response["ram_used_percent"] = round(response["ram_used"] / response["ram_total"] * 100, 2)
+
+    return response
 
 def get_temperature():
     try:

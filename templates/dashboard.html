@@ -12,7 +12,7 @@
             <div class="card-body">
                 <p><strong>IP:</strong> {{ sys.local_ip }}</p>
                 <p><strong>CPU:</strong> {{ sys.cpu }}%</p>
-                <p><strong>RAM:</strong> {{ sys.ram_used }}MB of {{sys.ram_total}} GB</p>
+                <p><strong>RAM:</strong> {{ sys.ram_used_percent }}% of {{sys.ram_total}} GB ({{sys.ram_used}}GB)</p>
                 <p><strong>Temperature:</strong> {{ sys.temperature }}</p>
             </div>
         </div>
