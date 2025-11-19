@@ -40,4 +40,4 @@ fi
 echo "Starting Flask webserver..."
 cd /home/gab/dashboard
 source venv/bin/activate
-python3 app.py
+exec gunicorn -b 0.0.0.0:3000 app:app
