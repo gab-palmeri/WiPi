@@ -45,7 +45,7 @@ def get_docker_info():
         containers.append({
             "name": c["Names"][0],
             "status": status_str,
-            "port": c['Ports'][-1]['PublicPort'] if c['Ports'] else "N/A",
+            "port": c['Ports'][-1].get('PublicPort', "N/A") if c['Ports'] else "N/A"
         })
     return containers
 
